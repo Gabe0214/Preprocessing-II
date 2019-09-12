@@ -1,1 +1,23 @@
 // Mixins in here
+.display-flex(@justify-content, @align-items){
+  display: flex;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+
+.font(@font-f, @font-s, @font-c){
+  font-family: @font-f;
+  font-size: @font-s; 
+  color: @font-c; 
+}
+
+
+.btn-s(@btn-color, @border-radius, @background-color){
+  display: inline-block;
+  text-align: center;
+  color: @btn-color;
+  padding: 1.2rem 4rem;
+  border: 1px black solid;
+  border-radius: @border-radius; 
+  background: @background-color;
+}
