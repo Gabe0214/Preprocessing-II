@@ -44,3 +44,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+
+.btn{
+  .btn-s(#fff, 10px, #0D8470);
+  font-size: 1.8rem;
+  border:none;
+  width: 80%;
+
+  &:hover {
+    cursor: pointer;
+    background: lighten(#0D8470, 10%);
+
+    @media @mobile {
+      background: lighten(#1EAEC5, 10%);
+    }
+  }
+
+  @media @mobile {
+    width: 100%;
+    background: #1EAEC5;
+  }
+}
